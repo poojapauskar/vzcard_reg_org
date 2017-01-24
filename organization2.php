@@ -32,7 +32,7 @@ echo "Number Of Users :".$_POST['no_of_users'];echo "<br>";
     <button type="submit">Register Organization</button>
 </form>
 
-
+<button onclick="window.location.href='organization.php'">Back</button>
 
 </body>
 </html>
