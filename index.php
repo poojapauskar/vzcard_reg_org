@@ -20,14 +20,16 @@ function show_wait_msg ()
 
 </script>
 </head>
-<body onload="hide_wait_msg()">
+<body onload="hide_wait_msg()" style="text-align:center">
+
+<img src="vz_title.png" style="transform:scale(0.7);margin-left:2%"></img>
 
 
 <?php
 
 if($_POST['username'] != '' && $_POST['password'] != ''){
   if($_POST['username'] == 'test' && $_POST['password'] == 'bitjini'){
-      echo "<script>location='organization.php'</script>";
+      echo "<script>location='import_excel.php'</script>";
   }
 
 }
@@ -48,7 +50,7 @@ if($_POST['username'] != '' && $_POST['password'] != ''){
 
 
 
-  <div style="margin-left:10%;margin-top:5%">   
+  <div style=";margin-top:5%">   
     <p id="form_title">Admin Console</p>
 
       <h6 style="color:#F03F32;margin-left:0%"><?php echo $error;?></h6>
@@ -59,7 +61,8 @@ if($_POST['username'] != '' && $_POST['password'] != ''){
             <input type="password" name="password" placeholder="Password" class="form-control" id="pwd" required>
           </div>
           
-          <button onclick="show_wait_msg()" type="submit" class="btn btn-md round">LOG IN</button>
+          <br><br>
+          <button style="background-color:green;color:white;height:30px" onclick="show_wait_msg()" type="submit" class="btn btn-md round">LOG IN</button>
         </form>
   </div>
 </body>

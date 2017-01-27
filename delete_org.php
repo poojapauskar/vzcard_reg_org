@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body style="text-align:center">
+
+<img src="vz_title.png" style=";margin-left:2%;transform:scale(0.7)"></img>
 
 <?php
 
@@ -23,7 +25,7 @@ $arr_del_org = json_decode($output_del_org,true);
 /*echo $arr_check;*/
 
 if($arr_del_org['status'] == 200){
-      echo "Organization Deleted";
+      $message="Organization Deleted";
 }else{
     /*echo "<script>location='index.php'</script>"; */ 
 }
@@ -31,14 +33,16 @@ if($arr_del_org['status'] == 200){
 }
 ?>
 
+<h4 style="color:green"><?php echo $message ?></h4>
+
 <form method="post" action="delete_org.php">
   Company:<br>
   <input type="text" name="company" required>
   <br><br>
-  <button name="del_btn" id="del_btn"  type="submit">Delete</button>
+  <button name="del_btn" id="del_btn" style="background-color:red;color:white;height:30px" type="submit">Delete</button>
 </form>
 
 <br><br><br><br>
-<button onclick="window.location.href='organization.php'">Back</button>
+<button style="background-color:blue;color:white;height:30px" onclick="window.location.href='import_excel.php'">Back</button>
 </body>
 </html>

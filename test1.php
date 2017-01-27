@@ -2,13 +2,13 @@
 <html>
 <body>
 
-<form method="post" action="organization2.php">
+<form method="post" action="import_excel.php">
   Company:<br>
   <input type="text" name="company" required>
-  <br>
-  Number Of Users:<br>
-  <input type="text" name="no_of_users" required>
   <br><br>
+  <!-- Number Of Users:<br>
+  <input type="text" name="no_of_users" required>
+  <br><br> -->
   <button type="submit">Submit</button>
 </form>
 
